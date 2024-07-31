@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('pages.beranda.index');
 })->name('beranda');
 
-Route::get('/tentang-rki', function () {
-    return view('pages.tentang-rki.index');
-})->name('tentang-rki');
+Route::get('/profil', function () {
+    return view('pages.profil.index');
+})->name('profil');
 
 Route::get('/berita', function () {
     return view('pages.berita.index');
@@ -29,11 +29,15 @@ Route::get('/berita', function () {
 Route::get('/kontak', function () {
     return view('pages.kontak.index');
 })->name('kontak');
-
-Route::get('/produk', function () {
-    // return view('pages.produk.index');
-    abort(404);
-})->name('produk');
+Route::get('/demografi', function () {
+    return view('pages.demografi.index');
+})->name('demografi');
+Route::get('/agenda', function () {
+    return view('pages.agenda.index');
+})->name('agenda');
+Route::get('/galeri', function () {
+    return view('pages.galeri.index');
+})->name('galeri');
 
 // Route::prefix('tentang-kami')->name('tentang-kami.')->group(function () {
 //     Route::get('visi-misi', function () {

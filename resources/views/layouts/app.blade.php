@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/Logo-color.png') }}">
     @include('layouts.partials.head')
-    <title>Rumah Kesejahteraan Indonesia</title>
+    <title>Dekopinwil Provinsi DKI Jakarta</title>
   </head>
   <body>
     <div id="preloader-active">

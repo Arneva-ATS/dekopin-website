@@ -3131,8 +3131,9 @@ label {
   margin-right: 50px;
 }
 .header .main-header .header-right {
-  width: 30%;
-  min-width: 245px;
+  width: 10%;
+  min-width: 100px;
+  margin-bottom: 3em;
   text-align: right;
   display: flex;
   align-items: center;
@@ -7984,7 +7985,7 @@ a.icon-socials:hover {
   top: 0px;
   left: 0px;
   height: 729px;
-  background-color: #191919;
+  background-color: #121C36;
   background-image: url(../imgs/page/services/bg-we-know.png);
   background-position: right top;
   background-repeat: no-repeat;

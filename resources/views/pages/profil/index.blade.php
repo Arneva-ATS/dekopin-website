@@ -6,9 +6,9 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="padding-left-auto">
-                    <a class="btn btn-tag-black mt-3 mt-md-0 ms-2 ms-md-0" href="#">Tentang Koperasi RKI</a>
-                    <h2 class="display-2 mt-15 mb-25 px-2 fw-bold">Rumah Kesejahteraan Indonesia</h2>
-                    <p class="text-xl mb-45 px-2">Didirikan oleh Pimpinan Paripurna Dewan Koperasi Indonesia (DEKOPIN) pada awal tahun 2020. Koperasi RKI hadir sebagai jawaban atas kebutuhan untuk menjembatani peran DEKOPIN yang sebelumnya hanya sebagai katalisator pasif dalam menjalankan program edukasi, fasilitasi, dan advokasi bagi gerakan koperasi di Indonesia.</p>
+                    <a class="btn btn-tag-black mt-3 mt-md-0 ms-2 ms-md-0" href="#">Tentang Dekopin</a>
+                    <h2 class="display-2 mt-15 mb-25 px-2 fw-bold">Dekopinwil DKI Jakarta</h2>
+                    <p class="text-xl mb-45 px-2">Dekopinwil DKI Jakarta bertujuan untuk menjadi pendorong utama dalam memajukan koperasi di wilayah DKI Jakarta, serta memberikan kontribusi nyata dalam pembangunan ekonomi yang lebih inklusif dan berkeadilan.</p>
                     <div class="box-buttons-feature-4">
                         <a class="btn btn-brand-4-medium mr-20" href="#">Gabung
                             <svg width="22" height="8" viewbox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,18 +34,7 @@
                             Baca lebih lanjut
                         </a>
                     </div>
-                    <div class="box-border-left-author py-3 py-lg-0">
-                        <p class="text-22-bold">Kesejahteraan untuk Semua, Harapan untuk Masa Depan</p>
-                        <div class="box-joined">
-                            <div class="box-authors">
-                                <span class="item-author"><img src="{{ asset('assets/imgs/page/homepage1/author.png') }}" alt="RKI"></span>
-                                <span class="item-author"><img src="{{ asset('assets/imgs/page/homepage1/author2.png') }}" alt="RKI"></span>
-                                <span class="item-author"><img src="{{ asset('assets/imgs/page/homepage1/author3.png') }}" alt="RKI"></span>
-                                <span class="item-author"><span class="text-num-author text-md-bold color-brand-2">+2k</span></span>
-                            </div>
-                            <span class="text-lg d-inline-block">Bergabunglah dengan Koperasi RKI<br class="d-none d-md-block">bersama wujudkan kesejahteraan!</span>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
@@ -65,7 +54,7 @@
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg-6 mb-30">
-                <h2 class="heading-2 text-white">Koperasi RKI Berkomitmen untuk Memperkuat Gerakan Koperasi Indonesia</h2>
+                <h2 class="heading-2 text-white">Dekopinwil DKI Jakarta Berkomitmen untuk Memperkuat Gerakan Koperasi di Wilayah Jakarta</h2>
             </div>
             <div class="col-lg-6 mb-30">
                 <p class="text-lg text-white fw-normal">Dengan pendekatan yang inklusif dan berkelanjutan, Koperasi RKI berusaha menciptakan ekosistem yang mendukung kesejahteraan anggota koperasi dan masyarakat luas. Melalui kemitraan yang strategis dan program-program yang relevan, Koperasi RKI siap membawa koperasi Indonesia menuju masa depan yang lebih cerah dan berdaya saing global.</p>
@@ -89,7 +78,7 @@
                     <div class="card-info">
                         <a href="#">
                             <h3 class="text-22-bold text-white">Misi Kami</h3>
-                            <p class="text-lg text-white">Meningkatkan pemahaman dan keterampilan anggota koperasi, menyediakan fasilitas pendukung operasional dalam berbagai sektor usaha, mengadvokasi kepentingan koperasi di tingkat nasional dan internasional, serta mengembangkan kemitraan strategis untuk memperkuat ekosistem koperasi.</p>
+                            <p class="text-lg text-white">Meningkatkan Kualitas dan Kinerja Koperasi serta Mendorong Pertumbuhan Koperasi.</p>
                         </a>
                     </div>
                 </div>

@@ -21,9 +21,11 @@
                 <div class="mobile-menu-wrap mobile-header-border">
                     <nav>
                         <ul class="mobile-menu font-heading">
-                            <li class="has-children"><a class="{{ request()->routeIs('beranda') ? 'active' : '' }}" href="{{ route('beranda') }}">Beranda</a></li>
-                            <li class="has-children"><a class="{{ request()->routeIs('tentang-rki') ? 'active' : '' }}" href="{{ route('tentang-rki') }}">Tentang RKI</a></li>
-                            <li class="has-children"><a class="{{ request()->routeIs('produk') ? 'active' : '' }}" href="{{ route('produk') }}">Produk</a></li>
+                            <li class="has-children"><a class="{{ request()->routeIs('profil') ? 'active' : '' }}" href="{{ route('profil') }}">Profil</a></li>
+                            <li class="has-children"><a class="{{ request()->routeIs('beranda') ? 'active' : '' }}" href="{{ route('beranda') }}">Pengurus</a></li>
+                            <li class="has-children"><a class="{{ request()->routeIs('demografi') ? 'active' : '' }}" href="{{ route('demografi') }}">Demografi</a></li>
+                            <li class="has-children"><a class="{{ request()->routeIs('agenda') ? 'active' : '' }}" href="{{ route('agenda') }}">Agenda</a></li>
+                            <li class="has-children"><a class="{{ request()->routeIs('galeri') ? 'active' : '' }}" href="{{ route('galeri') }}">Galeri</a></li>
                             <li class="has-children"><a class="{{ request()->routeIs('berita') ? 'active' : '' }}" href="{{ route('berita') }}">Berita</a></li>
                             <li class="has-children"><a class="{{ request()->routeIs('kontak') ? 'active' : '' }}" href="{{ route('kontak') }}">Kontak</a></li>
                         </ul>
@@ -31,8 +33,7 @@
                 </div>
                 <div class="mobile-account">
                     <ul class="mobile-menu font-heading">
-                        <li><a href="https://dashboard.rkicoop.co.id/login" target="_blank" class="btn btn-primary text-white w-100">Masuk</a></li>
-                        <li><a href="#!" data-bs-toggle="modal" data-bs-target="#standardModal" class="btn btn-gabung btn-outline-primary w-100">Gabung Koperasi</a></li>
+
                     </ul>
                 </div>
                 <div class="mobile-social-icon mb-50">

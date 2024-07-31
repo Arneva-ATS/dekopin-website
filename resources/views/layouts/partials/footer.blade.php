@@ -95,7 +95,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 mb-30">
-                <a href="index.html"><img alt="Koperasi" src="{{ asset('assets/imgs/Logo.png') }}" width="170"></a>
+                <a href="index.html"><img alt="Koperasi" src="{{ asset('assets/imgs/Logo-Koperasi.png') }}" width="100"></a>
                 <div class="mt-20 mb-20">
                     <p class="text-md text-light mb-10"><span class="fw-bold">Wisma NH</span><br> Jl. Raya Pasar Minggu No.2B-C, RT.2/RW.2, Pancoran, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12780</p>
                     <p class="text-md text-light">Jam Kerja: 9:00 - 17:00, Senin - Jum'at </p>
@@ -150,7 +150,7 @@
             <div class="row align-items-end">
                 <div class="col-lg-6 mb-20">
                     <h5 class="text-18-semibold neutral-0">Langganan halaman kami</h5>
-                    <p class="text-sm neutral-600 mb-20">Bersama Koperasi RKI, Murni untuk Kesejahteraan Anda.</p>
+                    <p class="text-sm neutral-600 mb-20">Bersama Dekopin, Murni untuk Kesejahteraan Anda.</p>
                     <div class="form-newsletter form-newsletter-2">
                         <form>
                             <input class="form-control" type="text" placeholder="email address">
@@ -174,7 +174,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 mb-20">
-                            <p class="text-sm neutral-600">Copyright &copy; 2024 Koperasi RKI. All rights reserved.</p>
+                            <p class="text-sm neutral-600">Copyright &copy; 2024 Dekopinwil DKI Jakarta. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
