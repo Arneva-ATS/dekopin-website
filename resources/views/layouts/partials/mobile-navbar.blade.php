@@ -22,11 +22,12 @@
                     <nav>
                         <ul class="mobile-menu font-heading">
                             <li class="has-children"><a class="{{ request()->routeIs('profil') ? 'active' : '' }}" href="{{ route('profil') }}">Profil</a></li>
-                            <li class="has-children"><a class="{{ request()->routeIs('beranda') ? 'active' : '' }}" href="{{ route('beranda') }}">Pengurus</a></li>
+                            <li class="has-children"><a class="{{ request()->routeIs('beranda') ? 'active' : '' }}" href="{{ route('pengurus') }}">Pengurus</a></li>
                             <li class="has-children"><a class="{{ request()->routeIs('demografi') ? 'active' : '' }}" href="{{ route('demografi') }}">Demografi</a></li>
                             <li class="has-children"><a class="{{ request()->routeIs('agenda') ? 'active' : '' }}" href="{{ route('agenda') }}">Agenda</a></li>
                             <li class="has-children"><a class="{{ request()->routeIs('galeri') ? 'active' : '' }}" href="{{ route('galeri') }}">Galeri</a></li>
                             <li class="has-children"><a class="{{ request()->routeIs('berita') ? 'active' : '' }}" href="{{ route('berita') }}">Berita</a></li>
+                            <li class="has-children"><a class="{{ request()->routeIs('berita') ? 'active' : '' }}" href="{{ route('notaris') }}">Notaris</a></li>
                             <li class="has-children"><a class="{{ request()->routeIs('kontak') ? 'active' : '' }}" href="{{ route('kontak') }}">Kontak</a></li>
                         </ul>
                     </nav>

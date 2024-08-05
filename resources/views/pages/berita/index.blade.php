@@ -7,7 +7,7 @@
             <span class="icon-1 shape-1"></span>
             <span class="icon-2 shape-2"></span>
             <span class="icon-3 shape-3"></span>
-            <span class="btn btn-brand-4-sm">Berita Dekopinwil DKI Jakarta</span>
+            <span class="btn btn-brand-4-sm">Berita Dekopin</span>
 
             <h2 class="heading-2 mb-20 mt-15">Berita & Informasi</h2>
             <p class="text-lg">Jelajahi Berita Dekopin untuk mendapatkan wawasan berharga, pendapat ahli, dan informasi terkini<br class="d-none d-lg-block"> tentang tren terbaru dalam dunia koperasi dan kesejahteraan.</p>
@@ -42,8 +42,8 @@
                     </div>
 
                     <div class="sidebar-right sidebar-text">
-                        <h5 class="mb-15">Tentang Dekopinwil DKI Jakarta</h5>
-                        <p class="text-md neutral-500">Dekopinwil DKI Jakarta bertujuan untuk menjadi pendorong utama dalam memajukan koperasi di wilayah DKI Jakarta, serta memberikan kontribusi nyata dalam pembangunan ekonomi yang lebih inklusif dan berkeadilan.</p>
+                        <h5 class="mb-15">Tentang Dekopin</h5>
+                        <p class="text-md neutral-500">Dekopin bertujuan untuk menjadi pendorong utama dalam memajukan koperasi di seluruh Indonesia, serta memberikan kontribusi nyata dalam pembangunan ekonomi yang lebih inklusif dan berkeadilan.</p>
 
                         <div class="box-socials-commingsoon mt-15">
                             <a class="icon-socials icon-facebook" href="#">

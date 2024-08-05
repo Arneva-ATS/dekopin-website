@@ -3128,11 +3128,11 @@ label {
   justify-content: space-between;
 }
 .header .main-header .header-left .header-logo {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 .header .main-header .header-right {
   width: 10%;
-  min-width: 100px;
+  min-width: 50px;
   margin-bottom: 3em;
   text-align: right;
   display: flex;

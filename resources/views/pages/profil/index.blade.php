@@ -7,8 +7,8 @@
             <div class="col-lg-6">
                 <div class="padding-left-auto">
                     <a class="btn btn-tag-black mt-3 mt-md-0 ms-2 ms-md-0" href="#">Tentang Dekopin</a>
-                    <h2 class="display-2 mt-15 mb-25 px-2 fw-bold">Dekopinwil DKI Jakarta</h2>
-                    <p class="text-xl mb-45 px-2">Dekopinwil DKI Jakarta bertujuan untuk menjadi pendorong utama dalam memajukan koperasi di wilayah DKI Jakarta, serta memberikan kontribusi nyata dalam pembangunan ekonomi yang lebih inklusif dan berkeadilan.</p>
+                    <h2 class="display-2 mt-15 mb-25 px-2 fw-bold">Dekopin</h2>
+                    <p class="text-xl mb-45 px-2">Dekopin bertujuan untuk menjadi pendorong utama dalam memajukan koperasi di seluruh Indonesia, serta memberikan kontribusi nyata dalam pembangunan ekonomi yang lebih inklusif dan berkeadilan.</p>
                     <div class="box-buttons-feature-4">
                         <a class="btn btn-brand-4-medium mr-20" href="#">Gabung
                             <svg width="22" height="8" viewbox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg-6 mb-30">
-                <h2 class="heading-2 text-white">Dekopinwil DKI Jakarta Berkomitmen untuk Memperkuat Gerakan Koperasi di Wilayah Jakarta</h2>
+                <h2 class="heading-2 text-white">Dekopin Berkomitmen untuk Memperkuat Gerakan Koperasi di Seluruh Indonesia</h2>
             </div>
             <div class="col-lg-6 mb-30">
                 <p class="text-lg text-white fw-normal">Dengan pendekatan yang inklusif dan berkelanjutan, Koperasi RKI berusaha menciptakan ekosistem yang mendukung kesejahteraan anggota koperasi dan masyarakat luas. Melalui kemitraan yang strategis dan program-program yang relevan, Koperasi RKI siap membawa koperasi Indonesia menuju masa depan yang lebih cerah dan berdaya saing global.</p>
@@ -89,7 +89,7 @@
                     <div class="card-info">
                         <a href="#">
                             <h3 class="text-22-bold text-white">Identitas Kami</h3>
-                            <p class="text-lg text-white">Koperasi RKI memiliki komitmen yang kuat untuk mewujudkan kesejahteraan berkelanjutan bagi masyarakat Indonesia. Kami percaya bahwa melalui penguatan dan pengembangan gerakan koperasi, kita dapat menciptakan peluang ekonomi yang lebih baik dan meningkatkan kualitas hidup bersama.</p>
+                            <p class="text-lg text-white">Dekopin memiliki komitmen yang kuat untuk mewujudkan kesejahteraan berkelanjutan bagi masyarakat Indonesia. Kami percaya bahwa melalui penguatan dan pengembangan gerakan koperasi, kita dapat menciptakan peluang ekonomi yang lebih baik dan meningkatkan kualitas hidup bersama.</p>
                         </a>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
     <div class="container">
         <div class="text-center">
             <h2 class="mb-15 text-capitalize">solusi bisnis dalam mendukung dan memperkuat<br class="d-none d-lg-block">gerakan koperasi di Indonesia</h2>
-            <p class="text-lg neutral-700">Dengan solusi-solusi ini, Koperasi RKI berkomitmen untuk mendukung koperasi di Indonesia <br class="d-none d-lg-block"> dalam mencapai kesuksesan dan kesejahteraan yang berkelanjutan</p>
+            <p class="text-lg neutral-700">Dengan solusi-solusi ini, Dekopin berkomitmen untuk mendukung koperasi di Indonesia <br class="d-none d-lg-block"> dalam mencapai kesuksesan dan kesejahteraan yang berkelanjutan</p>
         </div>
         <div class="row mt-90">
             <div class="col-lg-3 col-md-6">

@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
-    return view('pages.beranda.index');
-})->name('beranda');
+Route::get('/pengurus', function () {
+    return view('pages.pengurus.index');
+})->name('pengurus');
 
-Route::get('/profil', function () {
+Route::get('/', function () {
     return view('pages.profil.index');
 })->name('profil');
 
@@ -38,6 +38,9 @@ Route::get('/agenda', function () {
 Route::get('/galeri', function () {
     return view('pages.galeri.index');
 })->name('galeri');
+Route::get('/notaris', function () {
+    return view('pages.notaris.index');
+})->name('notaris');
 
 // Route::prefix('tentang-kami')->name('tentang-kami.')->group(function () {
 //     Route::get('visi-misi', function () {

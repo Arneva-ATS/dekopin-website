@@ -18,60 +18,9 @@
                             <th scope="col">Kegiatan</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="agenda">
                         <tr>
-                            <td>Senin, 11-03-2020</td>
-                            <td>Selasa, 12-03-2020</td>
-                            <td>08.30 - 12.00</td>
-                            <td>Pelatihan Kewirausahaan Berbasis Sumber Daya Lokal</td>
-                        </tr>
-                        <tr>
-                            <td>Senin, 11-03-2020</td>
-                            <td>Selasa, 12-03-2020</td>
-                            <td>08.30 - 12.00</td>
-                            <td>Pelatihan Kewirausahaan Berbasis Sumber Daya Lokal</td>
-                        </tr>
-                        <tr>
-                            <td>Jumat, 08-03-2020</td>
-                            <td>Sabtu, 09-03-2020</td>
-                            <td>08.30 - 12.00</td>
-                            <td>Pelatihan Kewirausahaan Berbasis Sumber Daya Lokal</td>
-                        </tr>
-                        <tr>
-                            <td>Jumat, 08-03-2020</td>
-                            <td>Sabtu, 09-03-2020</td>
-                            <td>08.30 - 12.00</td>
-                            <td>Pelatihan Kewirausahaan Berbasis Sumber Daya Lokal</td>
-                        </tr>
-                        <tr>
-                            <td>Selasa, 22-01-2020</td>
-                            <td>Rabu, 23-01-2020</td>
-                            <td>08.00 - 12.00</td>
-                            <td>SHORT COURSE "MANAJEMEN USAHA"</td>
-                        </tr>
-                        <tr>
-                            <td>Rabu, 16-01-2020</td>
-                            <td>Rabu, 16-01-2020</td>
-                            <td>08.00 - 12.00</td>
-                            <td>Short Course "Foto Produk"</td>
-                        </tr>
-                        <tr>
-                            <td>Rabu, 21-11-2020</td>
-                            <td>Rabu, 21-11-2020</td>
-                            <td>08.00 - 12.00</td>
-                            <td>Sosialisasi Katalog Digital untuk UMKM Kota Semarang</td>
-                        </tr>
-                        <tr>
-                            <td>Selasa, 20-11-2020</td>
-                            <td>Selasa, 20-11-2020</td>
-                            <td>09.00 - 12.00</td>
-                            <td>Pelatihan Admin Katalog Digital.</td>
-                        </tr>
-                        <tr>
-                            <td>Senin, 19-11-2020</td>
-                            <td>Senin, 19-11-2020</td>
-                            <td>09.00 - 12.00</td>
-                            <td>Pelatihan Katalog Produk untuk Admin Rumah Galeri</td>
+                            <td colspan="4" class="text-center">Loading...</td>
                         </tr>
                     </tbody>
                 </table>
@@ -93,3 +42,56 @@
     background-color: #e9ecef;
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://cms.rkicoop.co.id/api.php?act=agenda&halaman=1')
+        .then(response => response.json())
+        .then(data => {
+            const agendaElement = document.getElementById('agenda');
+            agendaElement.innerHTML = ''; // Clear initial loading message
+
+            if (data.length === 0) {
+                agendaElement.innerHTML = '<tr><td colspan="4" class="text-center">Belum ada agenda</td></tr>';
+                return;
+            }
+
+            data.forEach(item => {
+                const row = document.createElement('tr');
+
+                const tglMulai = document.createElement('td');
+                tglMulai.textContent = formatDate(item.tanggal_agenda);
+                row.appendChild(tglMulai);
+
+                const tglAkhir = document.createElement('td');
+                tglAkhir.textContent = formatDate(item.tanggal_selesai);
+                row.appendChild(tglAkhir);
+
+                const jam = document.createElement('td');
+                jam.textContent = item.jam;
+                row.appendChild(jam);
+
+                const kegiatan = document.createElement('td');
+                kegiatan.textContent = item.nama_agenda;
+                row.appendChild(kegiatan);
+
+                agendaElement.appendChild(row);
+            });
+        })
+        .catch(error => {
+            const agendaElement = document.getElementById('agenda');
+            agendaElement.innerHTML = '<tr><td colspan="4" class="text-center">Belum ada agenda</td></tr>';
+            console.error('Error fetching agenda data:', error);
+        });
+
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        const dayNames = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+        const day = dayNames[date.getDay()];
+        const dayNumber = String(date.getDate()).padStart(2, '0');
+        const monthNumber = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}, ${dayNumber}-${monthNumber}-${year}`;
+    }
+});
+</script>
