@@ -48,7 +48,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/path/to/your/pengurus/data')  // Update this path to your actual data endpoint
+    fetch('https://cms.rkicoop.co.id/pengurus')  // Update this path to your actual data endpoint
         .then(response => response.json())
         .then(data => {
             const pengurusListElement = document.getElementById('pengurus-list');

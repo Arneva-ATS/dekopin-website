@@ -44,7 +44,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/path/to/your/notaris/data')  // Update this path to your actual data endpoint
+    fetch('https://cms.rkicoop.co.id/notaris')  // Update this path to your actual data endpoint
         .then(response => response.json())
         .then(data => {
             const notarisListElement = document.getElementById('notaris-list');
