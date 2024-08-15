@@ -101,82 +101,13 @@
 <section class="section-box wow animate__animated animate__fadeIn box-preparing-2 mt-0 mb-100">
     <div class="container">
         <div class="text-center">
-            <h2 class="mb-15 text-capitalize">solusi bisnis dalam mendukung dan memperkuat<br class="d-none d-lg-block">gerakan koperasi di Indonesia</h2>
-            <p class="text-lg neutral-700">Dengan solusi-solusi ini, Dekopin berkomitmen untuk mendukung koperasi di Indonesia <br class="d-none d-lg-block"> dalam mencapai kesuksesan dan kesejahteraan yang berkelanjutan</p>
+            <h2 class="mb-15 text-capitalize">Struktur<br class="d-none d-lg-block">Organisasi</h2>
         </div>
         <div class="row mt-90">
-            <div class="col-lg-3 col-md-6">
                 <div class="card-preparing">
                     <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Program Edukasi dan Pelatihan</h5>
-                        <p>Seminar tentang regulasi dan kebijakan koperasi, Workshop kewirausahaan dan inovasi bisnis dan Pelatihan manajemen koperasi</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare2.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Fasilitasi Teknologi dan Digitalisasi</h5>
-                        <p>Pengembangan platform digital untuk pengelolaan koperasi, Implementasi sistem informasi koperasi berbasis cloud dan Aplikasi mobile untuk anggota koperasi</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare3.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Akses Pembiayaan dan Investasi</h5>
-                        <p>Fasilitasi akses ke investor untuk pengembangan usaha koperasi, Kemitraan dengan lembaga keuangan untuk akses pembiayaan dan Program pinjaman mikro dan kredit usaha rakyat (KUR)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Jaringan Bisnis dan Kemitraan</h5>
-                        <p>Membangun jaringan bisnis antar koperasi, Kolaborasi dengan perusahaan nasional dan internasional, dan Pengembangan kemitraan strategis dengan pemerintah dan sektor swasta</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare2.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Advokasi dan Kebijakan</h5>
-                        <p>Advokasi kebijakan yang mendukung perkembangan koperasi, Pendampingan dalam penyusunan regulasi koperasi dan Lobi dan kampanye untuk kepentingan koperasi di tingkat nasional dan internasional</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare3.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Pengembangan Produk dan Layanan</h5>
-                        <p>Inovasi produk dan diversifikasi layanan koperasi, Pengembangan usaha kreatif dan sektor UMKM dan Fasilitasi akses pasar untuk produk koperasi</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare2.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Sistem Pendukung Operasional</h5>
-                        <p>Penyediaan infrastruktur dan fasilitas operasional, Pengembangan pusat layanan terpadu untuk koperasi dan Sistem monitoring dan evaluasi kinerja koperasi</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare3.png') }}" alt="RKI"></div>
-                    <div class="card-info">
-                        <h5>Inkubator Bisnis dan Start-up</h5>
-                        <p>Program inkubasi untuk start-up koperasi, Pendampingan bisnis dan mentoring bagi usaha baru dan Akses ke sumber daya dan jaringan bisnis untuk start-up</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
   </section>
