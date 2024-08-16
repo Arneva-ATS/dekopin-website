@@ -48,7 +48,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://cms.rkicoop.co.id/pengurus')  // Update this path to your actual data endpoint
+    fetch('http://localhost/cms-website/api.php?act=pengurus&id_dekopin=1')  // Update this path to your actual data endpoint
         .then(response => response.json())
         .then(data => {
             const pengurusListElement = document.getElementById('pengurus-list');
@@ -59,32 +59,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            data.forEach(group => {
-                const sectionRow = document.createElement('tr');
-                const sectionCell = document.createElement('td');
-                sectionCell.setAttribute('colspan', '3');
-                sectionCell.classList.add('font-weight-bold');
-                sectionCell.textContent = group.section;
-                sectionRow.appendChild(sectionCell);
-                pengurusListElement.appendChild(sectionRow);
+            data.forEach((member, index) => {
+                const row = document.createElement('tr');
 
-                group.members.forEach(member => {
-                    const row = document.createElement('tr');
+                const no = document.createElement('td');
+                no.textContent = member.no;
+                row.appendChild(no);
 
-                    const no = document.createElement('td');
-                    no.textContent = member.no;
-                    row.appendChild(no);
+                const jabatan = document.createElement('td');
+                jabatan.textContent = member.jabatan;
+                row.appendChild(jabatan);
 
-                    const jabatan = document.createElement('td');
-                    jabatan.textContent = member.jabatan;
-                    row.appendChild(jabatan);
+                const nama = document.createElement('td');
+                nama.textContent = member.nama || '-'; // Handle empty names
+                row.appendChild(nama);
 
-                    const nama = document.createElement('td');
-                    nama.textContent = member.nama;
-                    row.appendChild(nama);
-
-                    pengurusListElement.appendChild(row);
-                });
+                pengurusListElement.appendChild(row);
             });
         })
         .catch(error => {

@@ -18,37 +18,21 @@
                             <div class="card-feature-2">
                                 <div class="card-image"><img src="{{ asset('assets/imgs/page/homepage3/marketing.svg') }}"></div>
 
-                                <div class="card-info">
-                                    <h3 class="text-22-bold">Wisma NH</h3>
-                                    <p class="text-md neutral-700">Jl. Raya Pasar Minggu No.2B-C, RT.2/RW.2, Pancoran, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12780</p>
+                                <div class="card-info" id="lokasi">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="card-feature-2">
                                 <div class="card-image"><img src="{{ asset('assets/imgs/page/homepage3/digital.svg') }}"></div>
-                                <div class="card-info">
-                                    <h3 class="text-22-bold">Phone</h3>
-
-                                    <div class="text-md neutral-700">
-                                        <div class="row">
-                                            <div class="col-sm-6"><a href="tel:081902030707">(+62)819 0203 0707</a></div>
-                                        </div>
-                                    </div>
+                                <div class="card-info" id="nomor_telepon">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="card-feature-2">
                                 <div class="card-image"><img src="{{ asset('assets/imgs/page/homepage3/digital.svg') }}"></div>
-                                <div class="card-info">
-                                    <h3 class="text-22-bold">Email</h3>
-
-                                    <div class="text-md neutral-700">
-                                        <div class="row">
-                                            <div class="col-sm-6"><a class="neutral-700" href="mailto:info@rkicoop.co.id">info@rkicoop.co.id</a></div>
-                                        </div>
-                                    </div>
+                                <div class="card-info" id="email">
                                 </div>
                             </div>
                         </div>
@@ -107,4 +91,21 @@
         </div>
     </div>
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    fetch('http://localhost/cms-website/api.php?act=kontak&id_dekopin=1')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.getElementById('email').innerHTML = data[0].email;
+            document.getElementById('lokasi').innerHTML = data[0].lokasi;
+            document.getElementById('nomor_telepon').innerHTML = data[0].nomor_telepon;
+        })
+        .catch(error => {
+            const agendaElement = document.getElementById('agenda');
+            agendaElement.innerHTML = '<tr><td colspan="4" class="text-center">Belum ada agenda</td></tr>';
+            console.error('Error fetching agenda data:', error);
+        });
+});
+  </script>
 @endsection

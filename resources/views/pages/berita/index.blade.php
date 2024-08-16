@@ -98,7 +98,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://cms.rkicoop.co.id/api.php?act=berita&id_dekopin=1')
+    fetch('http://localhost/cms-website/api.php?act=berita&id_dekopin=1')
         .then(response => response.json())
         .then(data => {
             const beritaElement = document.getElementById('berita');
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const cardImage = document.createElement('div');
                 cardImage.className = 'card-image';
                 const img = document.createElement('img');
-                img.src = "https://cms.rkicoop.co.id/" + item.foto;
+                img.src = "http://localhost/cms-website/" + item.foto;
                 img.alt = item.judul;
                 cardImage.appendChild(img);
 

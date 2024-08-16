@@ -7,8 +7,8 @@
             <div class="col-lg-6">
                 <div class="padding-left-auto">
                     <a class="btn btn-tag-black mt-3 mt-md-0 ms-2 ms-md-0" href="#">Tentang Dekopin</a>
-                    <h2 class="display-2 mt-15 mb-25 px-2 fw-bold">Dekopin</h2>
-                    <p class="text-xl mb-45 px-2">Dekopin bertujuan untuk menjadi pendorong utama dalam memajukan koperasi di seluruh Indonesia, serta memberikan kontribusi nyata dalam pembangunan ekonomi yang lebih inklusif dan berkeadilan.</p>
+                    <h2 class="display-2 mt-15 mb-25 px-2 fw-bold" id="nama_dekopin"></h2>
+                    <p class="text-xl mb-45 px-2" id="deskripsi_utama"></p>
                     <div class="box-buttons-feature-4">
                         <a class="btn btn-brand-4-medium mr-20" href="#">Gabung
                             <svg width="22" height="8" viewbox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,10 +54,10 @@
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg-6 mb-30">
-                <h2 class="heading-2 text-white">Dekopin Berkomitmen untuk Memperkuat Gerakan Koperasi di Seluruh Indonesia</h2>
+                <h2 class="heading-2 text-white" id="deskripsi_sec_1"></h2>
             </div>
             <div class="col-lg-6 mb-30">
-                <p class="text-lg text-white fw-normal">Dengan pendekatan yang inklusif dan berkelanjutan, Koperasi RKI berusaha menciptakan ekosistem yang mendukung kesejahteraan anggota koperasi dan masyarakat luas. Melalui kemitraan yang strategis dan program-program yang relevan, Koperasi RKI siap membawa koperasi Indonesia menuju masa depan yang lebih cerah dan berdaya saing global.</p>
+                <p class="text-lg text-white fw-normal" id="deskripsi_sec_2"></p>
             </div>
         </div>
         <div class="row mt-45">
@@ -67,7 +67,7 @@
                     <div class="card-info">
                         <a href="#">
                             <h3 class="text-22-bold text-white">Visi Kami</h3>
-                            <p class="text-lg text-white">Mewujudkan kesejahteraan berkelanjutan bagi seluruh masyarakat Indonesia melalui penguatan dan pengembangan gerakan koperasi.</p>
+                            <p class="text-lg text-white" id="visi"></p>
                         </a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                     <div class="card-info">
                         <a href="#">
                             <h3 class="text-22-bold text-white">Misi Kami</h3>
-                            <p class="text-lg text-white">Meningkatkan Kualitas dan Kinerja Koperasi serta Mendorong Pertumbuhan Koperasi.</p>
+                            <p class="text-lg text-white" id="misi"></p>
                         </a>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                     <div class="card-info">
                         <a href="#">
                             <h3 class="text-22-bold text-white">Identitas Kami</h3>
-                            <p class="text-lg text-white">Dekopin memiliki komitmen yang kuat untuk mewujudkan kesejahteraan berkelanjutan bagi masyarakat Indonesia. Kami percaya bahwa melalui penguatan dan pengembangan gerakan koperasi, kita dapat menciptakan peluang ekonomi yang lebih baik dan meningkatkan kualitas hidup bersama.</p>
+                            <p class="text-lg text-white" id="identitas_kami"></p>
                         </a>
                     </div>
                 </div>
@@ -105,10 +105,36 @@
         </div>
         <div class="row mt-90">
                 <div class="card-preparing">
-                    <div class="card-image"><img class="wow fadeInUp" src="{{ asset('assets/imgs/page/homepage1/img-prepare.png') }}" alt="RKI"></div>
+                    <div class="card-image"><img class="wow fadeInUp" alt="RKI" id="struktur_organisasi"></div>
                     </div>
                 </div>
         </div>
     </div>
   </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    fetch('http://localhost/cms-website/api.php?act=profil&id_dekopin=1')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.getElementById('nama_dekopin').innerText = data[0].nama_dekopin;
+            document.getElementById('deskripsi_utama').innerText = data[0].deskripsi_utama;
+            document.getElementById('deskripsi_sec_1').innerHTML = data[0].deskripsi_sec_1;
+            document.getElementById('deskripsi_sec_2').innerText = data[0].deskripsi_sec_2;
+            document.getElementById('visi').innerHTML = data[0].visi;
+            document.getElementById('misi').innerHTML = data[0].misi;
+            document.getElementById('identitas_kami').innerHTML = data[0].identitas_kami;
+            document.getElementById('struktur_organisasi').src = 'http://localhost/cms-website' + data[0].foto
+            console.log('http://localhost/cms-website' + data[0].foto)
+
+
+        })
+        .catch(error => {
+            const agendaElement = document.getElementById('agenda');
+            agendaElement.innerHTML = '<tr><td colspan="4" class="text-center">Belum ada agenda</td></tr>';
+            console.error('Error fetching agenda data:', error);
+        });
+});
+  </script>
 @endsection
