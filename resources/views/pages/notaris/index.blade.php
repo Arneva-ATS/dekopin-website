@@ -44,7 +44,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://cms.rkicoop.co.id/notaris')  // Update this path to your actual data endpoint
+    fetch('http://localhost/cms-website/api.php?act=notaris&id_dekopin=1')  // Update this path to your actual data endpoint
         .then(response => response.json())
         .then(data => {
             const notarisListElement = document.getElementById('notaris-list');
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 row.appendChild(nama);
 
                 const alamat = document.createElement('td');
-                alamat.innerHTML = `${item.alamat}<br>T: ${item.telepon}<br>F: ${item.fax}`;
+                alamat.innerHTML = `${item.alamat}`;
                 row.appendChild(alamat);
 
                 notarisListElement.appendChild(row);
