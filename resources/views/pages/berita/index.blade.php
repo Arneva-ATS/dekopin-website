@@ -76,17 +76,17 @@
                     <div class="sidebar-right sidebar-posts">
                         <h5 class="mb-15">Kategori</h5>
 
-                        <ul class="list-categories" id="categories">
+                        <ul class="list-categories row" id="categories">
                             <li> <a href="#">Loading...</a></li>
                         </ul>
                     </div>
 
-                    <div class="sidebar-right sidebar-posts">
+                    {{-- <div class="sidebar-right sidebar-posts">
                         <h5 class="mb-15">Tags </h5>
                         <div class="box-tags-sidebar" id="tags">
                             <a class="btn btn-neutral-100" href="#">Loading...</a>
                         </div>
-                    </div>
+                    </div> --}}
 
                     {{-- <div class="box-sidebar-normal"><a href="#"><img src="{{ asset('assets/imgs/page/job/ads.png') }}" alt="RKI"></a></div> --}}
                 </div>
@@ -98,6 +98,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Fetching Berita
     fetch('http://localhost/cms-website/api.php?act=berita&id_dekopin=1')
         .then(response => response.json())
         .then(data => {
@@ -150,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 cardDesc.className = 'card-desc';
                 const desc = document.createElement('p');
                 desc.className = 'text-md neutral-500';
-                desc.textContent = item.keterangan;
+                desc.innerHTML  = item.keterangan;
                 cardDesc.appendChild(desc);
 
                 const cardMore = document.createElement('div');
@@ -168,15 +169,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 card.appendChild(cardImage);
                 card.appendChild(cardInfo);
-
                 col.appendChild(card);
+
                 beritaElement.appendChild(col);
             });
-        })
-        .catch(error => {
-            const beritaElement = document.getElementById('berita');
-            beritaElement.innerHTML = '<div class="col-lg-12"><h3>Belum ada postingan</h3></div>';
-            console.error('Error fetching news data:', error);
         });
+
+    // Fetching Kategori Berita
+    fetch('http://localhost/cms-website/api.php?act=kategori_berita&id_dekopin=1')
+        .then(response => response.json())
+        .then(categories => {
+            const categoriesElement = document.getElementById('categories');
+            categoriesElement.innerHTML = ''; // Clear initial loading message
+            if (categories.length === 0) {
+                categoriesElement.innerHTML = '<li><a href="#">Tidak ada kategori</a></li>';
+                return;
+            }
+            categories.forEach(category => {
+                const li = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = '#';
+                link.textContent = category.nama_kategori;
+                li.appendChild(link);
+                categoriesElement.appendChild(li);
+            });
+        });
+
+    // Fetching Popular Posts, Tags, etc. can go here similarly
 });
 </script>
