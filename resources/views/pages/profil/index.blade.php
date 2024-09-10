@@ -114,7 +114,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://localhost/cms-website/api.php?act=profil&id_dekopin=1')
+    fetch('https://cms.dekopin.co.id/api.php?act=profil&id_dekopin=1')
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -125,8 +125,8 @@
             document.getElementById('visi').innerHTML = data[0].visi;
             document.getElementById('misi').innerHTML = data[0].misi;
             document.getElementById('identitas_kami').innerHTML = data[0].identitas_kami;
-            document.getElementById('struktur_organisasi').src = 'http://localhost/cms-website' + data[0].foto
-            console.log('http://localhost/cms-website' + data[0].foto)
+            document.getElementById('struktur_organisasi').src = 'https://cms.dekopin.co.id' + data[0].foto
+            console.log('https://cms.dekopin.co.id' + data[0].foto)
 
 
         })

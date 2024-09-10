@@ -297,8 +297,8 @@
     try {
         // Fetch data dari kedua API secara bersamaan
         const [galleryData, topGalleryData] = await Promise.all([
-            fetch('http://localhost/cms-website/api.php?act=gallery&id_dekopin=1').then(response => response.json()),
-            fetch('http://localhost/cms-website/api.php?act=top-gallery&id_dekopin=1').then(response => response.json())
+            fetch('https://cms.dekopin.co.id/api.php?act=gallery&id_dekopin=1').then(response => response.json()),
+            fetch('https://cms.dekopin.co.id/api.php?act=top-gallery&id_dekopin=1').then(response => response.json())
         ]);
 
         // Memproses dan menampilkan data dari gallery
@@ -308,7 +308,7 @@
             rowElement += `
                 <div class="col-lg-4 col-md-6">
                     <div class="card-we-know">
-                        <div class="card-image"> <img src="http://localhost/cms-website/${item.foto}" alt="Nivia"></div>
+                        <div class="card-image"> <img src="https://cms.dekopin.co.id/${item.foto}" alt="Nivia"></div>
                         <div class="card-info"> <a class="card-title" href="#">
                                 <h4>${item.id_kategori}</h4>
                                 <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
@@ -344,7 +344,7 @@
             <div class="row mt-65">
                 <div class="col-lg-8 col-md-8">
                     <div class="card-we-know">
-                        <div class="card-image"> <img src="http://localhost/cms-website/${topGalleryData[0].foto}" alt="Nivia"
+                        <div class="card-image"> <img src="https://cms.dekopin.co.id/${topGalleryData[0].foto}" alt="Nivia"
                                 style="max-height:50em"></div>
                         <div class="card-info"> <a class="card-title" href="#">
                                 <h4>${topGalleryData[0].id_kategori}</h4>
@@ -379,7 +379,7 @@
             topRowElement += `
                 <div class="col-12 mb-4">
                     <div class="card-we-know">
-                        <div class="card-image"> <img src="http://localhost/cms-website/${item.foto}" alt="Nivia"
+                        <div class="card-image"> <img src="https://cms.dekopin.co.id/${item.foto}" alt="Nivia"
                                 style="max-height:23em"></div>
                         <div class="card-info"> <a class="card-title" href="#">
                                 <h4>${item.id_kategori}</h4>

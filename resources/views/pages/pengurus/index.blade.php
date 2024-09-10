@@ -48,7 +48,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://localhost/cms-website/api.php?act=pengurus&id_dekopin=1')  // Update this path to your actual data endpoint
+    fetch('https://cms.dekopin.co.id/api.php?act=pengurus&id_dekopin=1')  // Update this path to your actual data endpoint
         .then(response => response.json())
         .then(data => {
             const pengurusListElement = document.getElementById('pengurus-list');

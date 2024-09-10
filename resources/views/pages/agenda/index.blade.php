@@ -45,7 +45,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://localhost/cms-website/api.php?act=agenda&id_dekopin=1')
+    fetch('https://cms.dekopin.co.id/api.php?act=agenda&id_dekopin=1')
         .then(response => response.json())
         .then(data => {
             const agendaElement = document.getElementById('agenda');
